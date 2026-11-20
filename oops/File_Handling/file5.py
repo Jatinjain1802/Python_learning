@@ -1,0 +1,6 @@
+f=open("File_Handling/demo.txt","w+")
+f.write("good evening")
+print(f.tell())
+f.seek(0,0)
+print(f.tell())
+print(f.read())

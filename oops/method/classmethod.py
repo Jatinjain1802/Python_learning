@@ -10,6 +10,7 @@ class student:
         #   new_fees=cls.fees+50000  
         # cls.fees=new_fees
         # cls.school=cls.school.upper()
+        print(cls.fees)
     @classmethod
     def display_school(cls):
         print(cls.school)
@@ -21,4 +22,4 @@ student.change()
 student.change()
 
 student.display_school()
-print(student.__dict__)
+# print(student.__dict__)

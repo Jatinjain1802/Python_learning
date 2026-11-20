@@ -2,7 +2,7 @@
 Method:- ANy function which is deifne insdie the class
 
 1) Class Method:- 
-    -> it belong to class itself , no tthe instance
+    -> it belong to class itself , not the instance
     -> works on class level data not the instance
     -> recevie the class reference as the parameter to cls
     -> it is declared using `@classmethod` decoratore just above the method
@@ -14,7 +14,7 @@ Method:- ANy function which is deifne insdie the class
     -> A class method can ACCESS and MODIFY the class variables
     -> accessing the classsmethod using ClassName.classmethod()
 2) Innstance Method :- 
-    ->it belong to insatnce
+    -> it belong to insatnce
     -> it work on instance spefic data
     -> recevie the current instance reference as the 1st parameter reffrend to self
     -> syntax:  class ClassName:

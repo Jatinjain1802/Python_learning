@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Management System</title>
+</head>
+<body>
+
+    <div>
+        <h1>Welcome to Library Management System</h1>
+
+        <h2>Available Books</h2>
+
+    {% for book in books %}
+        <p>
+            <strong> Book Id :</strong> {{ book.id }} 
+        </p>
+
+        <p>
+            <strong> Book Title :</strong> {{ book.title.upper }} 
+        </p>
+
+        <p>
+            <strong> Book Price :</strong> $. {{ book.price }} 
+        </p>
+
+        <p>
+            <strong> Print Edition :</strong> {{ book.edition }} 
+        </p>
+
+        <p>
+            <strong> Author :</strong> {{ book.author }} 
+        </p>
+
+        <p>
+            <strong> Book Language :</strong> {{ book.language }} 
+        </p>
+
+        <p>
+            <strong> Description :</strong> <br>
+            {{ book.description }} 
+        </p>
+
+        <hr>
+        {% endfor %}
+    </div>
+
+</body>
+</html> 

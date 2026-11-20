@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+<style>
+    .child-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card {
+        height: 150px;
+        width: 300px;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: azure;
+    }
+
+    .title {
+        font-size: 20px;
+        font-weight: bolder;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+
+    .action {
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .action p,
+    a {
+        font-size: 18px;
+    }
+</style>
+{% endblock extra_css %}
+
+{% block content %}
+<div class="child-container">
+    <h1>Available Books</h1>
+    <div class="card-container">
+        {% for book in books %}
+        <div class="card">
+            <p class="title">{{book.title.upper}}</p>
+            <div class="action">
+                <p>$ {{book.price}} /-</p>
+                <a href="">Explore</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}
+
+
+{% block title %}
+BOOKS
+{% endblock title %}

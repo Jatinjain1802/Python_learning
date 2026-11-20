@@ -13,6 +13,8 @@ File object Methods:-
     1) f.readable():- Checks weather the file is in readebale mode or not . it returns the boolen vlaue
     2) f.writable():- checks weather the file is in writeable mode or not . It return the boolen value
     3) f.close():-  it is used to close the file and release the resources associated with it. In simple terms, it disconnects the program form the file 
+    4) f.tell():- returns teh runneter n the from of int
+    5) f.seef(ofset):= 
 -----------------------------------------------------------------------------
 IMPORTANT FUNCTION wrt to File handling in python:-
 1) open() function:- The open() function is used to open a file in python. It establishes a connection between the python program and the file. It return the file  object through which we can perform operations. The syntax of open() function is as follows:-
@@ -26,6 +28,31 @@ IMPORTANT FUNCTION wrt to File handling in python:-
         1) f.write(string):- method of file object used to send the stringdata from python into a file. write() does not automatically add a new line
         2) f.writelines(list):- method of file object which write elements of an iternale to the file. It does not automatically add a newline characters. alwasys their shoukd ve kist of strng, tuple of string
     c) 'a' :- This mode is used to open a file in append mode. it open the file in write mode BUT it retains the existing data, all write operation happen ar the end only,even if seek() is used.if the file does not exist, a new file of that name will be created and be opened in wirte mode
+    d) 'r+':- 
+    e) 'w+':- write and read mode. if the file exist , it open the file in write+read mode, exisitng data erased and cursore start form the beignigng. if file not existed it create the new 'file and open in write mode. if is used you specigicsakky 
+===================================================================================
+JSON:-
+
+1) dumps():- dumps () is a function of json module that converts a Python object into a JSON-formatted string
+2) dump():- dump() is json module function that converts a Python object into JSON format and writes it into a file.
+3) loads():- funtion of json module reconverts a JSON string back to the python object
+4) load():- function of json module reads json data form the file
+
+
+=============================================================
+pickling : converts a python object into a  byte stream (binary data) and stores it in a binary file
+
+1) dumps():-is a function of the pickle module that convert a python object into a byte stream
+2) dump():- is a function of the pickle module that convert a python object into a byte stream and writes it into a binary file
+3) loads():- is funciton of the pickle that converts a byte stream back into a python objects. stnx:- obj=pickle.loads(byte_data)
+4) load():- is funciton of the pickle that reqads a byte stream form a binary file and converts it back into a python object .stnyx:- obj=pickle.load(f) 
+
+
+
+
+
+
+
     
 
 '''
